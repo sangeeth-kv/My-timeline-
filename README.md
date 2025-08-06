@@ -1,3 +1,3 @@
-TASK 1 :
- HTML
- 1)A <header> with logo and theme toggle.  [done]
+Stage 1 :
+ This is a minimal semantic HTML5 skeleton.
+ 
