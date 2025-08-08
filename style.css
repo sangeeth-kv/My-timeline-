@@ -1,0 +1,218 @@
+/* styles.css */
+
+/* --- CSS Variables for Color Scheme --- */
+:root {
+  --primary: #171716;
+  --yell: #f9d94a;
+  --bg: #c3d87b;
+  --card-bg: #f9d94a;
+  --text: #232533;
+  --footerclr: #575859;
+  --header: #f9d94a;
+  --bullet: #090909;
+ --border: #17171636;;
+}
+
+/* --- Base Reset --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary);
+  color: var(--header);
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 8px rgba(56, 101, 217, 0.07);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#toggle-btn {
+  background: var(--yell);
+  color: var(--primary);
+  border: none;
+  padding: 0.5rem 1.3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+#toggle-btn:hover {
+  background: var(--primary);
+  color: var(--header);
+  border: 1px solid var(--yell);
+}
+
+/* --- Timeline Section --- */
+main {
+  max-width: auto;
+  margin: 2.3rem auto;
+  padding: 0 1rem;
+}
+
+#timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  margin: 2rem 0;
+}
+#timeline::before {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--border);
+  z-index: 0;
+}
+
+/* for eventss card */
+.timeline-event {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: 0 3px 18px rgba(44,55,69,0.04);
+  padding: 1.3rem 1.1rem 1rem 3.7rem;
+  position: relative;
+}
+/* for bullets */
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+/*contents */
+.timeline-event h2 {
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+  color: var(--primary);
+}
+
+.timeline-event time {
+  font-size: 0.98rem;
+  color: var(--muted);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.38rem;
+}
+
+/* texts */
+.timeline-event p {
+  margin: 0.8rem 0 0 0;
+  color: var(--text);
+  line-height: 1.58;
+}
+/* footer */
+footer {
+    
+  color: var(--footerclr);
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+  margin-top: 150px;
+}
+/* for responsivee */
+
+/*  (like tabs) for >768 up to 1023px  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    max-width: 740px;
+    padding: 0 2rem;
+  }
+  #timeline {
+    gap: 3rem;
+  }
+  .timeline-event {
+    padding-left: 4rem;
+    font-size: 1.05rem;
+  }
+  .timeline-event::before {
+    left: 23px;
+    width: 16px;
+    height: 16px;
+  }
+  #timeline::before {
+    left: 28px;
+    width: 4px;
+  }
+}
+
+
+/* for like above (desktp) >=1024px  */
+@media (min-width: 1024px) {
+  #timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.7rem 3.2rem;
+    position: relative;
+  }
+  #timeline::before {
+    /* Horizontal timeline line */
+    left: 0;
+    top: 3.8rem;
+    right: 0;
+    height: 4px;
+    width: auto;
+    background: var(--border);
+  }
+  .timeline-event {
+    padding: 1.1rem 1.3rem 1rem 1.3rem;
+    margin-left: 0;
+    min-height: 200px;
+    position: relative;
+    border-left: none;
+    margin-top: 3.2rem;
+  }
+  .timeline-event::before {
+    /* bullets at center*/
+    left: 50%;
+    top: -2.3rem;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 0 6px var(--bg);
+    border-width: 3px;
+  }
+}
+
+/*  for mobiles <768px  */
+@media (max-width: 767px) {
+  main {
+    padding: 0 0.7rem;
+  }
+  .logo {
+    font-size: 1.18rem;
+  }
+  header {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  #timeline {
+    gap: 2rem;
+  }
+  .timeline-event {
+    padding: 1rem 0.9rem 1rem 3.2rem;
+    font-size: 0.97rem;
+  }
+  .timeline-event h2 {
+    font-size: 1rem;
+  }
+}
+
