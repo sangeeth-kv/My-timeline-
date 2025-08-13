@@ -1,0 +1,58 @@
+[
+  {
+    "year": "2002-12-03",
+    "title": "My Birth",
+    "description": "I was born on the 3rd of December, 2002, in the culturally rich district of Kannur, Kerala.Here is the beginning of my journey.",
+    "imageURL": "images/birth.jpg",
+    "category": "personal"
+  },
+  {
+    "year": "2019-03",
+    "title": "SSLC",
+    "description": "I successfully completed my SSLC in March 2019 from Mambaram Higher Secondary School, achieving an outstanding percentage of 97%.",
+    "imageURL": "images/sslc.jpg",
+    "category": "education"
+  },
+  {
+    "year": "2021-03",
+    "title": "Plus Two",
+    "description": "Completed Plus Two in Computer Science from Mambaram Higher Secondary School with 81%.",
+    "imageURL": "images/plustwo.png",
+    "category": "education"
+  },
+  {
+    "year": "2024-03",
+    "title": "Diploma in Electronics Engineering",
+    "description": "Earned my Diploma from Government Polytechnic College with a CGPA of 8.04.",
+    "imageURL": "images/diploma.jpg",
+    "category": "education"
+  },
+  {
+    "year": "2024-06",
+    "title": "Full-Stack Development Journey",
+    "description": "Started learning MERN stack with HTML5, CSS, and JavaScript as the base.",
+    "imageURL": "images/fullstack.png",
+    "category": "career"
+  },
+  {
+    "year": "2024-08",
+    "title": "Node.js Mastery",
+    "description": "Mastering backend development using Node.js and Express.",
+    "imageURL": "images/nodejs.png",
+    "category": "career"
+  },
+  {
+    "year": "2024-10",
+    "title": "MongoDB Exploration",
+    "description": "Started building projects with MongoDB for Database Management.",
+    "imageURL": "images/mongodb.png",
+    "category": "career"
+  },
+  {
+    "year": "2025-01",
+    "title": "First Project",
+    "description": "Completed my first project, a custom e-commerce site.",
+    "imageURL": "images/freelance.png",
+    "category": "career"
+  }
+]

@@ -12,3 +12,5 @@ Ensure your design adapts at breakpoints: mobile (<768px), tablet (768–1023px)
 2)Responsive layout using Flexbox or CSS Grid for the timeline. 
 3)Header styling, typography, colour scheme. 
 4)Placeholder styles for event markers used as dot.
+
+stage 3:
